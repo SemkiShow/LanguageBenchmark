@@ -17,27 +17,27 @@ read language
 
 if [ $test == 1 ]; then
     if [ $language == 1 ]; then
-        time python3 print.py
+        time python3 Print/print.py
     elif [ $language == 2 ]; then
-        g++ -o printcpp print.cpp && time ./printcpp
+        g++ -o Print/printcpp -O3 Print/print.cpp && time ./Print/printcpp
     else
         echo "Test language error!"
         exit 1
     fi
 elif [ $test == 2 ]; then
     if [ $language == 1 ]; then
-        time python3 add.py
+        time python3 Add/add.py
     elif [ $language == 2 ]; then
-        g++ -o addcpp add.cpp && time ./addcpp
+        g++ -o Add/addcpp -O3 Add/add.cpp && time ./Add/addcpp
     else
         echo "Test language error!"
         exit 1
     fi
 elif [ $test == 3 ]; then
     if [ $language == 1 ]; then
-        time python3 sin.py
+        time python3 Sin/sin.py
     elif [ $language == 2 ]; then
-        g++ -o sincpp sin.cpp && time ./sincpp
+        g++ -o Sin/sincpp -O3 Sin/sin.cpp && time ./Sin/sincpp
     else
         echo "Test language error!"
         exit 1
@@ -46,16 +46,16 @@ elif [ $test == 4 ]; then
     if [ $language == 1 ]; then
         time python3 Fibonacci/fibonacci.py
     elif [ $language == 2 ]; then
-        g++ -o Fibonacci/fibonaccicpp Fibonacci/fibonacci.cpp && time ./Fibonacci/fibonaccicpp
+        g++ -o Fibonacci/fibonaccicpp -O3 Fibonacci/fibonacci.cpp && time ./Fibonacci/fibonaccicpp
     else
         echo "Test language error!"
         exit 1
     fi
 elif [ $test == 5 ]; then
     if [ $language == 1 ]; then
-        time python3 prime.py
+        time python3 Prime/prime.py
     elif [ $language == 2 ]; then
-        g++ -o primecpp -O3 prime.cpp && time ./primecpp
+        g++ -o Prime/primecpp -O3 Prime/prime.cpp && time ./Prime/primecpp
     else
         echo "Test language error!"
         exit 1

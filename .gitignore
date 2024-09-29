@@ -1,9 +1,5 @@
 .vscode
-printcpp
-addcpp
-sincpp
-Fibonacci/fibonaccicpp
-Fibonacci/fibonacci.txt
-Fibonacci
-pi*
+*[!.]cpp
 *.txt
+Fibonacci
+Pi

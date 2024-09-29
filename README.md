@@ -1,5 +1,8 @@
 # Language benchmark
-This repo is created to test the speed difference between Python and C++. To run the testing script (test.sh), you need to use Linux, Mac (all the g++ calls need to be replaced with clang++ calls) or WSL on Windows(all the g++ calls need to be replaced with mingw64-g++ calls).
+
+This repo was created to test the speed difference between Python and C++. To run the testing script (test.sh), you need to use Linux, Mac (all the g++ calls need to be replaced with clang++ calls) or WSL on Windows(all the g++ calls need to be replaced with mingw64-g++ calls).
+
+---
 Examples:
 ```
 $ ./test.sh 

@@ -6,7 +6,7 @@ echo "2) Add"
 echo "3) Sine"
 echo "4) Prime numbers"
 echo "5) Collatz conjecture"
-echo "6) Naive fibonacci (coming soon)"
+echo "6) Naive fibonacci"
 echo -n "Your choice: "
 read test
 

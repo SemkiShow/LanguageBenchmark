@@ -10,17 +10,18 @@ What test do you want to run?
 1) Print
 2) Add
 3) Sine
-4) Naive fibonacci (coming soon)
-5) Prime numbers
-Your choice: 5
+4) Prime numbers
+5) Collatz conjecture
+6) Naive fibonacci
+Your choice: 4
 What what language do you want to test?
 1) Python
 2) C++
 Your choice: 1
 
-real    0m0.803s
-user    0m0.751s
-sys     0m0.034s
+real    0m0.790s
+user    0m0.766s
+sys     0m0.023s
 ```
 ```
 $ ./test.sh 
@@ -28,15 +29,16 @@ What test do you want to run?
 1) Print
 2) Add
 3) Sine
-4) Naive fibonacci (coming soon)
-5) Prime numbers
-Your choice: 5
+4) Prime numbers
+5) Collatz conjecture
+6) Naive fibonacci
+Your choice: 4
 What what language do you want to test?
 1) Python
 2) C++
 Your choice: 2
 
-real    0m0.124s
-user    0m0.111s
+real    0m0.122s
+user    0m0.108s
 sys     0m0.013s
 ```

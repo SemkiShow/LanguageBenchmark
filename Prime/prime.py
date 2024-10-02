@@ -13,8 +13,11 @@ def SieveOfEratosthenes (n):
 
 N = 10**6
 A = SieveOfEratosthenes(N)
-outputFile = open("primepy.txt", 'w')
+A[0] = False
+A[1] = False    
+outputFile = open("Prime/primepy.txt", 'w')
 for i in range(N):
-    outputFile.write(str(i) + ": " + str(A[i]) + "\n")
+    if A[i] == True:
+        outputFile.write(str(i) + "\n")
 outputFile.close()
         

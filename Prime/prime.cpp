@@ -31,11 +31,13 @@ int main()
 {
     unsigned long N = pow(10, 6);
     bool* A = SieveOfEratosthenes(N);
+    A[0] = false;
+    A[1] = false;    
     std::ofstream outputFile;
-    outputFile.open("primecpp.txt");
+    outputFile.open("Prime/primecpp.txt");
     for (unsigned long i = 0; i < N; i++)
     {
-        outputFile << i << ": " << A[i] << "\n";
+        if (A[i] == true) outputFile << i << "\n";
     }
     outputFile.close();
     return 0;

@@ -8,6 +8,7 @@ echo "4) Prime numbers"
 echo "5) Collatz conjecture"
 echo "6) Naive fibonacci"
 echo "7) Powers"
+echo "8) Square roots"
 echo -n "Your choice: "
 read test
 
@@ -75,7 +76,16 @@ elif [ $test == 7 ]; then
     if [ $language == 1 ]; then
         time python3 Power/power.py
     elif [ $language == 2 ]; then
-        g++ -o Power/powercpp Power/power.cpp && time ./Power/powercpp
+        g++ -o Power/powercpp -O3 Power/power.cpp && time ./Power/powercpp
+    else
+        echo "Test language error!"
+        exit 1
+    fi
+elif [ $test == 8 ]; then
+    if [ $language == 1 ]; then
+        time python3 Sqrt/sqrt.py
+    elif [ $language == 2 ]; then
+        g++ -o Sqrt/sqrtcpp -O3 Sqrt/sqrt.cpp && time ./Sqrt/sqrtcpp
     else
         echo "Test language error!"
         exit 1

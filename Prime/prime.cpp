@@ -7,7 +7,7 @@ bool* SieveOfEratosthenes(unsigned long n)
 {
     bool* A = new bool[n+1];
     // std::fill(std::begin(A), std::end(A), true);
-    for (unsigned long i = 0; i < n; i++)
+    for (unsigned long i = 0; i < n+1; i++)
     {
         A[i] = true;
     }
@@ -32,7 +32,8 @@ int main()
     unsigned long N = pow(10, 6);
     bool* A = SieveOfEratosthenes(N);
     A[0] = false;
-    A[1] = false;    
+    A[1] = false;
+    std::cout << "Writing..." <<std::endl;
     std::ofstream outputFile;
     outputFile.open("Prime/primecpp.txt");
     for (unsigned long i = 0; i < N; i++)

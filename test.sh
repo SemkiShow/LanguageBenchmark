@@ -7,6 +7,7 @@ echo "3) Sine"
 echo "4) Prime numbers"
 echo "5) Collatz conjecture"
 echo "6) Naive fibonacci"
+echo "7) Powers"
 echo -n "Your choice: "
 read test
 
@@ -66,6 +67,15 @@ elif [ $test == 6 ]; then
         time python3 Fibonacci/fibonacci.py
     elif [ $language == 2 ]; then
         g++ -o Fibonacci/fibonaccicpp -O3 Fibonacci/fibonacci.cpp && time ./Fibonacci/fibonaccicpp
+    else
+        echo "Test language error!"
+        exit 1
+    fi
+elif [ $test == 7 ]; then
+    if [ $language == 1 ]; then
+        time python3 Power/power.py
+    elif [ $language == 2 ]; then
+        g++ -o Power/powercpp Power/power.cpp && time ./Power/powercpp
     else
         echo "Test language error!"
         exit 1
